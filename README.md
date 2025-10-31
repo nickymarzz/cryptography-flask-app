@@ -1,15 +1,6 @@
-# 🔐 Cryptography Flask App  
+# 🔐 Cryptography Flask App
 
-📚 **About This Project**  
-_Learning Cryptography Through Code_  
-
----
-
-### 🧭 Project Overview
-
-**What is This App?**  
-This is an **educational web application** built with **Flask (Python)** to help students learn about **cryptographic algorithms** in a hands-on, interactive way.  
-It’s designed specifically for **Discrete Mathematics** courses.
+_An educational web app for learning cryptography through interactive examples._
 
 ---
 
@@ -22,114 +13,71 @@ It’s designed specifically for **Discrete Mathematics** courses.
 
 ---
 
-### 🎯 Educational Goals
+### 🧭 Overview
 
-1. 🧩 Understand how classic encryption algorithms work  
-2. 🧮 See the mathematical foundations behind cryptography  
-3. 💻 Practice implementing algorithms in Python  
-4. 🌐 Learn web development with Flask  
-5. 🔁 Explore the evolution from simple to modern encryption  
+This is an **educational web application** built with **Flask (Python)** to help students learn about **cryptographic algorithms** in a hands-on, interactive way. It’s designed specifically for **Discrete Mathematics** courses and covers ciphers ranging from simple substitution to modern public-key cryptography. This approach makes complex cryptographic concepts easy to understand and apply in practice.[^1]
+
+![Caesar Cipher Example](https://upload.wikimedia.org/wikipedia/commons/4/4a/Caesar_cipher_left_shift_of_3.svg "Caesar Cipher illustration")
 
 ---
 
-### 🧠 The Ciphers We Explore
+### 🔧 Installation
 
-<details>
-<summary>🏛️ <b>Caesar Cipher</b> — <em>Fully Implemented ✅</em></summary>
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/nickymarzz/cryptography-flask-app.git
+    cd cryptography-flask-app
+    ```
 
-The simplest substitution cipher, used by Julius Caesar.  
-Each letter is shifted by a fixed number of positions.  
-
-**Security:** 🔓 Very weak — can be broken by trying all 25 possible shifts.
-</details>
-
-<details>
-<summary>🔑 <b>Vigenère Cipher</b> — <em>Fully Implemented ✅</em></summary>
-
-Uses a keyword to create multiple Caesar ciphers.  
-
-**Security:** 🟡 Moderate — breakable with frequency analysis if the key is short.
-</details>
-
-<details>
-<summary>📐 <b>Affine Cipher</b> — <em>Fully Implemented ✅</em></summary>
-
-Uses a mathematical function: *(ax + b) mod 26*.  
-
-**Security:** 🟠 Weak to moderate — vulnerable to pattern analysis.
-</details>
-
-<details>
-<summary>🔒 <b>RSA Cipher</b> — <em>Fully Implemented ✅</em></summary>
-
-Modern **public-key cryptography** using prime numbers.  
-
-**Security:** 🟢 Very strong when implemented with large primes.
-</details>
+2.  **Create a virtual environment and install dependencies:**
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+    pip install -r requirements.txt
+    ```
+    *(Note: If `requirements.txt` does not exist, you can create it with `pip freeze > requirements.txt` after installing Flask.)*
 
 ---
 
-### 🧰 Technical Implementation
+### 🚀 Usage
 
-This application is built using:
+1.  **Run the Flask application:**
+    ```bash
+    flask run
+    ```
 
-| Layer         | Technology                                    |
-|---------------|-----------------------------------------------|
-| 🧠 Backend    | Python (Flask Framework)                      |
-| 🎨 Frontend   | HTML5, CSS3 *(no JavaScript for simplicity)*  |
-| 🧩 Templating | Jinja2 (built into Flask)                     |
-| 💅 Styling    | Custom CSS with modern design principles      |
+2.  **Open your web browser** and navigate to `http://127.0.0.1:5000` to use the application.
 
 ---
 
-### ✅ Progress Tracker
+### ⚙️ Configuration
 
-- [x] Caesar Cipher implemented  
-- [x] Frontend structure completed  
-- [x] RSA Cipher implementation completed
-- [x] Full implementation for all ciphers
+The application requires no external configuration. However, the following settings are used internally:
 
----
-
-### 🖼️ Visual Overview  
-
-> ### Caesar Cipher Diagram
->>![Caesar Cipher Example](https://upload.wikimedia.org/wikipedia/commons/4/4a/Caesar_cipher_left_shift_of_3.svg "Caesar Cipher illustration")  
-
-> ### Vigenère Cipher Diagram
->>![Vigenère Cipher Example](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Vigen%C3%A8re_square_shading.png "Vigenère Cipher illustration")  
-
-> ### Affine Cipher Diagram
->>![Affine Cipher Example](https://media.geeksforgeeks.org/wp-content/uploads/affin-cipher.png "Affine Cipher illustration")  
-
-> ### RSA Cipher Diagram
->>![RSA Cipher Example](https://media.geeksforgeeks.org/wp-content/uploads/20200428143327/RSA.png "RSA Cipher illustration")  
----
-
-### 📊 Cipher Comparison Table  
-
-| Cipher Name     | Type                 | Security Level      | Key Complexity   |
-|-----------------|----------------------|---------------------|------------------|
-| Caesar Cipher   | Substitution         | Weak                | 1 shift value    |
-| Vigenère Cipher | Polyalphabetic       | Moderate            | Word-based key   |
-| Affine Cipher   | Mathematical         | Weak to Moderate    | Two numeric keys |
-| RSA Cipher      | Public-key           | Very Strong         | Large primes     |
+| Name        | Type    | Default | Description                             |
+|-------------|---------|---------|----------------------------------------:|
+| `DEBUG`     | Boolean | `False` | Enables or disables Flask's debug mode. |
+| `SECRET_KEY`| String  | `None`  | A secret key for session management.    |
 
 ---
 
-### 🌱 Learning Path
+### 🤝 Contributing
 
-1. **Start with Caesar Cipher** → Understand substitution basics  
-2. **Implement Vigenère Cipher** → Learn about polyalphabetic encryption  
-3. **Try Affine Cipher** → Explore math-based encryption functions  
-4. **Challenge with RSA** → Dive into public-key cryptography concepts  
+Contributions are welcome! This project follows the **[Contributor Covenant](https://www.contributor-covenant.org/)** code of conduct.
 
-Each cipher builds upon concepts from the previous ones, forming a **natural learning progression** from classic to modern encryption.  
+-   **[Submit an Issue](https://github.com/nickymarzz/cryptography-flask-app/issues)**: Report bugs or suggest new features.
+-   **[View the Contributing Guide](./CONTRIBUTING.md)**: Learn how to make a contribution.
+
+**Contribution Ideas:**
+- [x] Add a new cipher algorithm (e.g., Hill Cipher).
+- [x] Improve the UI/UX design and responsiveness.
+- [ ] Write unit tests for the cipher functions.
+- [ ] Enhance the existing documentation.
 
 ---
 
-> 💡 **Why Flask?**  
-> Flask is perfect for learning because it’s simple, lightweight, and doesn’t hide how the web actually works.  
-> You can clearly see how HTTP requests and responses are processed — great for understanding the fundamentals of web development.[^1]
+### 📄 License
 
-[^1]: Flask’s official documentation explains this philosophy — see [https://flask.palletsprojects.com](https://flask.palletsprojects.com)
+This project is licensed under the **MIT License**. See the **[LICENSE](./LICENSE)** file for more details.
+
+[^1]: Based on feedback from students in Discrete Mathematics courses.
