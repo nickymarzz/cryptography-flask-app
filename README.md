@@ -103,7 +103,7 @@ This application is built using:
 >>![Affine Cipher Example](https://media.geeksforgeeks.org/wp-content/uploads/affin-cipher.png "Affine Cipher illustration")  
 
 > ### RSA Cipher Diagram
->>![RSA Cipher Example](https://www.researchgate.net/profile/Hueseyin-Bodur/publication/298298027/figure/fig2/AS:339820552441867@1458030941634/RSA-algorithm-structure.png "RSA Cipher illustration")  
+>>![RSA Cipher Example](https://media.geeksforgeeks.org/wp-content/uploads/20200428143327/RSA.png "RSA Cipher illustration")  
 ---
 
 ### 📊 Cipher Comparison Table  
