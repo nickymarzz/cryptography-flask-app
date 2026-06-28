@@ -98,6 +98,14 @@ python app.py
 
 Then open `http://127.0.0.1:5000` in your browser.
 
+## Testing
+
+Run the unit test suite from the repository root with:
+
+```bash
+python -m unittest discover -s tests -v
+```
+
 ## Available Routes
 
 - `/` - Home page

@@ -295,7 +295,7 @@ def affine_decrypt(cipher_text, a, b):
     TODO: Implement this logic!
     """
     if gcd(a, 26) != 1:
-        return ValueError("'a' must be coprime with 26.")
+        raise ValueError("'a' must be coprime with 26.")
 
     a_inv = mod_inverse(a, 26) # Find modular inverse of a
     if a_inv is None:
