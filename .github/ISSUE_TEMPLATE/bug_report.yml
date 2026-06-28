@@ -1,0 +1,120 @@
+name: Bug report
+description: Report a reproducible problem to help maintainers investigate and fix it.
+title: "[Bug]: "
+labels:
+  - bug
+assignees:
+  - nickymarzz
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug.
+
+        Before submitting, please confirm the issue is reproducible on the latest version of the project and is not already reported in the issue tracker.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Pre-submission checklist
+      description: Please confirm the following before you continue.
+      options:
+        - label: I searched existing issues for the same or similar problem.
+          required: true
+        - label: I reviewed the README and CONTRIBUTING guide.
+          required: true
+        - label: I can reproduce this issue on the latest code from `main`.
+          required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Bug summary
+      description: Give a short description of the problem.
+      placeholder: A concise summary of what is broken.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: List the exact steps needed to reproduce the issue.
+      placeholder: |
+        1. Open ...
+        2. Enter ...
+        3. Click ...
+        4. Observe ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: Describe what you expected to happen.
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: Describe what actually happened instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Logs, screenshots, or stack traces
+      description: Paste any relevant logs, screenshots, or tracebacks.
+      render: shell
+      placeholder: Paste logs or screenshots here.
+    validations:
+      required: false
+
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      description: Which operating system are you using?
+      placeholder: Windows 11, macOS 14, Ubuntu 24.04
+    validations:
+      required: true
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser or client
+      description: If relevant, provide the browser and version.
+      placeholder: Chrome 137, Firefox 128, curl 8.8
+    validations:
+      required: false
+
+  - type: input
+    id: python
+    attributes:
+      label: Python version
+      description: Provide the Python version if applicable.
+      placeholder: Python 3.12.3
+    validations:
+      required: false
+
+  - type: input
+    id: app-version
+    attributes:
+      label: Project version or commit
+      description: Share the branch, tag, or commit hash if known.
+      placeholder: main @ abc1234
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional context
+      description: Add anything else that could help maintainers triage the issue.
+      placeholder: Related changes, possible cause, or workaround.
+    validations:
+      required: false

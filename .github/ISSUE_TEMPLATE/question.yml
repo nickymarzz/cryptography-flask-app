@@ -1,0 +1,52 @@
+name: General question
+description: Ask a usage, documentation, or project process question.
+title: "[Question]: "
+labels:
+  - question
+assignees:
+  - nickymarzz
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reaching out.
+
+        Before opening a question, please check the README, CONTRIBUTING guide, and any existing issues to see whether your answer is already available.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you ask
+      description: Please confirm the following.
+      options:
+        - label: I reviewed the README and available documentation first.
+          required: true
+        - label: I searched existing issues for a similar question.
+          required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: Ask your question as clearly as possible.
+      placeholder: What are you trying to do, and where are you getting stuck?
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Share relevant background so maintainers can answer efficiently.
+      placeholder: Relevant page, feature, command, or documentation section.
+    validations:
+      required: false
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: If relevant, provide OS, browser, Python version, or other environment details.
+      placeholder: Windows 11, Chrome 137, Python 3.12.3
+    validations:
+      required: false
