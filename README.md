@@ -1,83 +1,134 @@
-# 🔐 Cryptography Flask App
+# Cryptography Flask App
 
-_An educational web app for learning cryptography through interactive examples._
-
----
-
-### 🏆 Project Status
-
-![Status](https://img.shields.io/badge/Status-Completed-green)
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![Flask](https://img.shields.io/badge/Flask-Web%20Framework-orange)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
----
+An educational Flask application for exploring classical and introductory
+public-key cryptography through interactive web forms.
 
-### 🧭 Overview
+## Overview
 
-This is an **educational web application** built with **Flask (Python)** to help students learn about **cryptographic algorithms** in a hands-on, interactive way. It’s designed specifically for **Discrete Mathematics** courses and covers ciphers ranging from simple substitution to modern public-key cryptography. This approach makes complex cryptographic concepts easy to understand and apply in practice.[^1]
+Cryptography Flask App is designed to help students and beginners understand how
+common cryptographic algorithms work in practice. The application provides a
+simple browser-based interface for experimenting with encryption, decryption,
+and key generation workflows.
 
-![Caesar Cipher Example](https://upload.wikimedia.org/wikipedia/commons/4/4a/Caesar_cipher_left_shift_of_3.svg "Caesar Cipher illustration")
+This repository is intended primarily for learning and local development rather
+than production deployment.
 
----
+## Features
 
-### 🔧 Installation
+- Interactive pages for multiple cipher demonstrations
+- Browser-based encryption and decryption workflows
+- Educational examples suitable for classroom or self-study use
+- Custom error pages for common application errors
+- Lightweight Flask setup with minimal dependencies
 
-1.  **Clone the repository:**
-    ```bash
-    git clone https://github.com/nickymarzz/cryptography-flask-app.git
-    cd cryptography-flask-app
-    ```
+## Supported Ciphers
 
-2.  **Create a virtual environment and install dependencies:**
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-    pip install -r requirements.txt
-    ```
-    *(Note: If `requirements.txt` does not exist, you can create it with `pip freeze > requirements.txt` after installing Flask.)*
+The application currently includes pages and routes for:
 
----
+- Caesar cipher
+- Vigenere cipher
+- Affine cipher
+- RSA
 
-### 🚀 Usage
+## Project Structure
 
-1.  **Run the Flask application:**
-    ```bash
-    flask run
-    ```
+```text
+.
+|-- app.py
+|-- ciphers.py
+|-- requirements.txt
+|-- static/
+`-- templates/
+```
 
-2.  **Open your web browser** and navigate to `http://127.0.0.1:5000` to use the application.
+- `app.py` contains the Flask routes and request handling logic.
+- `ciphers.py` contains the cipher implementations used by the web interface.
+- `templates/` contains the HTML views for each cipher page and error page.
+- `static/` contains front-end assets such as stylesheets.
 
----
+## Requirements
 
-### ⚙️ Configuration
+- Python 3.10 or later
+- `pip`
 
-The application requires no external configuration. However, the following settings are used internally:
+## Installation
 
-| Name        | Type    | Default | Description                             |
-|-------------|---------|---------|----------------------------------------:|
-| `DEBUG`     | Boolean | `False` | Enables or disables Flask's debug mode. |
-| `SECRET_KEY`| String  | `None`  | A secret key for session management.    |
+1. Clone the repository:
 
----
+```bash
+git clone https://github.com/nickymarzz/cryptography-flask-app.git
+cd cryptography-flask-app
+```
 
-### 🤝 Contributing
+2. Create a virtual environment:
 
-Contributions are welcome! This project follows the **[Contributor Covenant](https://www.contributor-covenant.org/)** code of conduct.
+```bash
+python -m venv venv
+```
 
--   **[Submit an Issue](https://github.com/nickymarzz/cryptography-flask-app/issues)**: Report bugs or suggest new features.
--   **[View the Contributing Guide](./CONTRIBUTING.md)**: Learn how to make a contribution.
+3. Activate the virtual environment:
 
-**Contribution Ideas:**
-- [x] Add a new cipher algorithm (e.g., Hill Cipher).
-- [x] Improve the UI/UX design and responsiveness.
-- [ ] Write unit tests for the cipher functions.
-- [ ] Enhance the existing documentation.
+```powershell
+venv\Scripts\activate
+```
 
----
+On macOS or Linux:
 
-### 📄 License
+```bash
+source venv/bin/activate
+```
 
-This project is licensed under the **MIT License**. See the **[LICENSE](./LICENSE)** file for more details.
+4. Install dependencies:
 
-[^1]: Based on feedback from students in Discrete Mathematics courses.
+```bash
+pip install -r requirements.txt
+```
+
+## Running the Application
+
+Start the Flask development server with:
+
+```bash
+python app.py
+```
+
+Then open `http://127.0.0.1:5000` in your browser.
+
+## Available Routes
+
+- `/` - Home page
+- `/home` - Redirect to the home page
+- `/caesar` - Caesar cipher interface
+- `/vigenere` - Vigenere cipher interface
+- `/affine` - Affine cipher interface
+- `/rsa` - RSA interface
+- `/about` - About page
+
+## Configuration Notes
+
+The application currently runs with Flask's built-in development server and
+debug mode enabled when started via `python app.py`.
+
+The app also defines a hard-coded secret key in `app.py` for local educational
+use. If you plan to deploy or extend this project, replace that key with a
+secure environment-based configuration before using it outside local
+development.
+
+## Contributing
+
+Contributions are welcome. Please review the following project guidelines before
+opening an issue or pull request:
+
+- [Contributing Guide](./CONTRIBUTING.md)
+- [Code of Conduct](./.github/CODE_OF_CONDUCT.md)
+- [Security Policy](./.github/SECURITY.md)
+- [Issue Tracker](https://github.com/nickymarzz/cryptography-flask-app/issues)
+
+## License
+
+This project is licensed under the MIT License. See [LICENSE](./LICENSE) for
+details.
