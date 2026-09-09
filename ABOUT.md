@@ -1,4 +1,4 @@
-### 🎯 Educational Goals
+# 🎯 Educational Goals
 
 1. 🧩 Understand how classic encryption algorithms work  
 2. 🧮 See the mathematical foundations behind cryptography  
@@ -8,44 +8,36 @@
 
 ---
 
-### 🧠 The Ciphers We Explore
+## 🧠 The Ciphers We Explore
 
-<details>
-<summary>🏛️ <b>Caesar Cipher</b> — <em>Fully Implemented ✅</em></summary>
+### 🏛️ **Caesar Cipher** — *Fully Implemented ✅*
 
 The simplest substitution cipher, used by Julius Caesar.  
 Each letter is shifted by a fixed number of positions.  
 
 **Security:** 🔓 Very weak — can be broken by trying all 25 possible shifts.
-</details>
 
-<details>
-<summary>🔑 <b>Vigenère Cipher</b> — <em>Fully Implemented ✅</em></summary>
+### 🔑 **Vigenère Cipher** — *Fully Implemented ✅*
 
 Uses a keyword to create multiple Caesar ciphers.  
 
 **Security:** 🟡 Moderate — breakable with frequency analysis if the key is short.
-</details>
 
-<details>
-<summary>📐 <b>Affine Cipher</b> — <em>Fully Implemented ✅</em></summary>
+### 📐 **Affine Cipher** — *Fully Implemented ✅*
 
 Uses a mathematical function: *(ax + b) mod 26*.  
 
 **Security:** 🟠 Weak to moderate — vulnerable to pattern analysis.
-</details>
 
-<details>
-<summary>🔒 <b>RSA Cipher</b> — <em>Fully Implemented ✅</em></summary>
+### 🔒 **RSA Cipher** — *Fully Implemented ✅*
 
 Modern **public-key cryptography** using prime numbers.  
 
 **Security:** 🟢 Very strong when implemented with large primes.
-</details>
 
 ---
 
-### 🧰 Technical Implementation
+## 🧰 Technical Implementation
 
 This application is built using:
 
@@ -58,7 +50,7 @@ This application is built using:
 
 ---
 
-### ✅ Progress Tracker
+## ✅ Progress Tracker
 
 - [x] Caesar Cipher implemented  
 - [x] Frontend structure completed  
@@ -67,22 +59,27 @@ This application is built using:
 
 ---
 
-### 🖼️ Visual Overview  
+## 🖼️ Visual Overview  
 
-> ### Caesar Cipher Diagram
->>![Caesar Cipher Example](https://upload.wikimedia.org/wikipedia/commons/4/4a/Caesar_cipher_left_shift_of_3.svg "Caesar Cipher illustration")  
+### Caesar Cipher Diagram
 
-> ### Vigenère Cipher Diagram
->>![Vigenère Cipher Example](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Vigen%C3%A8re_square_shading.png "Vigenère Cipher illustration")  
+![Caesar Cipher Example](https://upload.wikimedia.org/wikipedia/commons/4/4a/Caesar_cipher_left_shift_of_3.svg "Caesar Cipher illustration")  
 
-> ### Affine Cipher Diagram
->>![Affine Cipher Example](https://media.geeksforgeeks.org/wp-content/uploads/affin-cipher.png "Affine Cipher illustration")  
+### Vigenère Cipher Diagram
 
-> ### RSA Cipher Diagram
->>![RSA Cipher Example](https://media.geeksforgeeks.org/wp-content/uploads/20200428143327/RSA.png "RSA Cipher illustration")  
+![Vigenère Cipher Example](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Vigen%C3%A8re_square_shading.png "Vigenère Cipher illustration")  
+
+### Affine Cipher Diagram
+
+![Affine Cipher Example](https://media.geeksforgeeks.org/wp-content/uploads/affin-cipher.png "Affine Cipher illustration")  
+
+### RSA Cipher Diagram
+
+![RSA Cipher Example](https://media.geeksforgeeks.org/wp-content/uploads/20200428143327/RSA.png "RSA Cipher illustration")  
+
 ---
 
-### 📊 Cipher Comparison Table  
+## 📊 Cipher Comparison Table  
 
 | Cipher Name     | Type                 | Security Level      | Key Complexity   |
 |-----------------|----------------------|---------------------|------------------|
@@ -93,7 +90,7 @@ This application is built using:
 
 ---
 
-### 🌱 Learning Path
+## 🌱 Learning Path
 
 1. **Start with Caesar Cipher** → Understand substitution basics  
 2. **Implement Vigenère Cipher** → Learn about polyalphabetic encryption  

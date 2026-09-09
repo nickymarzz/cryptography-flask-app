@@ -4,12 +4,12 @@ We welcome contributions to this project! Please follow these guidelines to ensu
 
 ## How to Contribute
 
-1.  **Fork the repository** on GitHub.
-2.  **Clone your fork** to your local machine.
-3.  **Create a new branch** for your changes.
-4.  **Make your changes** and commit them with a clear message.
-5.  **Push your changes** to your fork.
-6.  **Create a pull request** to the main repository.
+1. **Fork the repository** on GitHub.
+2. **Clone your fork** to your local machine.
+3. **Create a new branch** for your changes.
+4. **Make your changes** and commit them with a clear message.
+5. **Push your changes** to your fork.
+6. **Create a pull request** to the main repository.
 
 ## Reporting Bugs
 

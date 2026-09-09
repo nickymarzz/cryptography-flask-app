@@ -64,13 +64,13 @@ git clone https://github.com/nickymarzz/cryptography-flask-app.git
 cd cryptography-flask-app
 ```
 
-2. Create a virtual environment:
+1. Create a virtual environment:
 
 ```bash
 python -m venv venv
 ```
 
-3. Activate the virtual environment:
+1. Activate the virtual environment:
 
 ```powershell
 venv\Scripts\activate
@@ -82,7 +82,7 @@ On macOS or Linux:
 source venv/bin/activate
 ```
 
-4. Install dependencies:
+1. Install dependencies:
 
 ```bash
 pip install -r requirements.txt
@@ -90,7 +90,16 @@ pip install -r requirements.txt
 
 ## Running the Application
 
-Start the Flask development server with:
+### Windows (Quick Start)
+
+You can use the provided batch scripts:
+
+- **Start**: Double-click `start.bat` (or run `start.bat` in a terminal) to launch the Flask server in a dedicated window and open `http://127.0.0.1:5000` in your default browser.
+- **Stop**: Double-click `stop.bat` (or run `stop.bat` in a terminal) to cleanly terminate the server and release port 5000.
+
+### Manual Start
+
+Start the Flask development server directly with:
 
 ```bash
 python app.py
