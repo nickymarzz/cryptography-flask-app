@@ -1,0 +1,36 @@
+Usage
+=====
+
+Our Services
+------------
+
+Welcome to CipherSchool's services page! We offer a range of educational and consulting services related to cryptography, programming, and technology.
+
+Educational Services
+--------------------
+
+We provide comprehensive educational resources and courses to help you master the art of cryptography and programming. Our services include:
+
+- **Cryptography Courses**: Learn about various encryption techniques, from classical ciphers to modern cryptographic systems.
+- **Programming Tutorials**: Step-by-step guides and tutorials for various programming languages and technologies.
+- **Code Reviews**: Get expert feedback on your code to improve security and best practices.
+
+Consulting Services
+-------------------
+
+Need expert advice on cryptography or programming? We offer consulting services for:
+
+- **Security Audits**: Review your code and systems for potential security vulnerabilities.
+- **Cryptographic Implementation**: Help implement secure cryptographic solutions for your projects.
+- **Technical Guidance**: Get personalized advice on your programming and security challenges.
+
+
+Custom Solutions
+----------------
+
+We can work with you to create custom solutions tailored to your specific needs. Whether you're working on a personal project or a business application, we're here to help.
+
+
+.. tip::
+   Interested in our services? Please reach out to us through our contact page to discuss your needs and how we can help you achieve your goals.
+

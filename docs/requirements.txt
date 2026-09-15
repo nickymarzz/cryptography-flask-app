@@ -1,0 +1,2 @@
+sphinx>=7.0.0
+sphinx-wagtail-theme>=6.0.0
